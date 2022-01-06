@@ -1,5 +1,5 @@
 
-# APP FOOTER
+# App Footer
 
 <!-- DOCS-IGNORE:start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -7,88 +7,71 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
-**brief description**
-App Footer is usefull while adding a footer to your store.
+App Footer is useful while adding a footer to your store. User can customise the app as per their prefrence.
 
-Next, **add media** (either an image of a GIF) with the rendered components, so that users can better understand how the app works in practice. 
+![image](https://user-images.githubusercontent.com/93201110/148345876-251616f1-7dc6-4a52-b04c-7a1500fb58f0.png)
 
-![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
 
 ## Configuration 
 
-In this section, you first must **add the primary instructions** that will allow users to use the app's blocks in their store, such as:
-
 1. Install the app "echidna.footer@0.0.1"
-2. Add the "echidna.footer@0.0.1" as a theme dependency in the `manifest.json` file;
-3. Declare the app's main block "app-footer" in a given theme template or inside another block from the theme.
-4. Run Vtex Link to link your theme.
+2. Add the "echidna.footer@0.0.1" as a theme dependency in the `manifest.json` file
+
+![image](https://user-images.githubusercontent.com/93201110/148352444-abf074f9-ebdc-46e4-a4f2-4b1e179f029e.png)
 
 
-**Props table**
+3. Now, you can use the main block exported by the footer app. Check out the list below:
+
+| Blaock name    |           Description    |                                                                                                                             
+| ------------ |  --------------------------------------------------------------------------------------------------------------------------------------------- | 
+| app-footer      |   ![image](https://user-images.githubusercontent.com/93201110/148353803-f3e867d2-4fe0-4166-94be-c9aa271df4c4.png) Enables you to build the Footer.            |
+
+5. On the desire store page add the block to display the footer app. Take bellow example:
+
+![image](https://user-images.githubusercontent.com/93201110/148354627-feaa5e1d-0173-45a7-b899-0e21d5888c92.png)
+
+## configuration
+
+Check all props to configure your footer in the table below:
 
 | Prop name    | Type            | Description    | Default value                                                                                                                               |
 | ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
+| title      | array       | List of titles(headers) for your contents (Example: 'Products', 'Buying' ect. from above reference image)      | undefined     |
+| column(n), url | array       | 1. column(n): List of contents to be displayed on your footer (Example: column1, column2.... ect can be used for number of columns required) 2. URL for each content in the list. For reference:  ![image](https://user-images.githubusercontent.com/93201110/148360912-85ed026e-d114-456b-b89f-5aee6760b8f4.png)  | undefined     |
+| imageURL      | array       | List of image URL's for displaying social icon images or any other images as per user prefrence       | undefined     |
+| socailLinks      | array       |  List of URL's to link your images(social icon)        | undefined     |
+| copyright      | string       |  Copyright string for your footer         | undefined     |
+| disclamer      | string       |  Defines the disclamer or any string content for your footer         | undefined     |
 
-
-### `block-2` props
-
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
 
 Prop types are: 
 
 - `string` 
-- `enum` 
-- `number` 
-- `boolean` 
-- `object` 
 - `array` 
-
-When documenting a prop whose type is `object` or `array` another prop table will be needed. You can create it following the example below:
-
-- `propName` object:
-
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
-
-
-Remember to also use this Configuration section to  **showcase any necessary disclaimer** related to the app and its blocks, such as the different behavior it may display during its configuration. 
-
-## Modus Operandi *(not mandatory)*
-
-There are scenarios in which an app can behave differently in a store, according to how it was added to the catalog, for example. It's crucial to go through these **behavioral changes** in this section, allowing users to fully understand the **practical application** of the app in their store.
-
-If you feel compelled to give further details about the app, such as it's **relationship with the VTEX admin**, don't hesitate to use this section. 
 
 ## Customization
 
-The first thing that should be present in this section is the sentence below, showing users the recipe pertaining to CSS customization in apps:
-
 `In order to apply CSS customizations in this and other blocks, follow the instructions given in the recipe on [Using CSS Handles for store customization](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization).`
 
-Thereafter, you should add a single column table with the available CSS handles for the app, like the one below. Note that the Handles must be ordered alphabetically.
+To apply CSS customization in this and other blocks, follow the instructions given in the recipe on Using CSS Handles for store customization.
 
 | CSS Handles |
 | ----------- | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` |
+| 'footerContainer'|
+| 'headerContainer'|
+| 'header'|
+|  'subheader'|
+|  'links'|
+|  'icons'|
+|  'socialImage'|
+|  'disclamer'|
+|  'copyright'|
+| 'copyrightContainer' |
 
-
-If there are none, add the following sentence instead:
-
-`No CSS Handles are available yet for the app customization.`
-
-<!-- DOCS-IGNORE:start -->
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people:
+Thanks goes to these wonderful people
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
