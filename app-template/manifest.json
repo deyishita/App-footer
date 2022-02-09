@@ -1,7 +1,7 @@
 {
   "vendor": "echidna",
   "name": "footer",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "title": "footer",
   "description": "footer",
   "builders": {
